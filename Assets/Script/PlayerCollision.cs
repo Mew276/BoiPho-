@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Va : MonoBehaviour
+public class PlayerCollision : MonoBehaviour
 {
 
     Vector3 startPosition;
