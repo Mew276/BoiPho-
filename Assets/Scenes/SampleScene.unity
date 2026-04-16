@@ -364,7 +364,7 @@ Transform:
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -3.67, y: 1, z: 5.92}
+  m_LocalPosition: {x: 204, y: 1, z: 125.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &760407702
+--- !u!1 &613437325
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,43 +407,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 760407704}
-  - component: {fileID: 760407703}
+  - component: {fileID: 613437327}
+  - component: {fileID: 613437326}
   m_Layer: 0
-  m_Name: MapSpawner
+  m_Name: MapManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &760407703
+--- !u!114 &613437326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760407702}
+  m_GameObject: {fileID: 613437325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4750ab9432ffb6442ab22911ff4ceda0, type: 3}
+  m_Script: {fileID: 11500000, guid: ef2f2c2cb4cc5c14c85f235d80d0dd3d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandomMapSpawner
-  mapPrefabs:
-  - {fileID: 7545289391231157488, guid: 6626fbd7f434a7a44855490ff65a6e3e, type: 3}
-  - {fileID: 8556242383581898201, guid: 16ee944a4cb414c448bbcb94c5fb4066, type: 3}
-  - {fileID: 4681888942040617139, guid: 11652055a83d9664dbc001f02d11fdb5, type: 3}
-  - {fileID: 3951569927040347997, guid: db6f66fd95459f643803063de2d478ce, type: 3}
-  player: {fileID: 1458356392}
---- !u!4 &760407704
+  m_EditorClassIdentifier: Assembly-CSharp::MapSpawn
+  tiles:
+  - {fileID: 7139433829132186713, guid: 7dc12a6d1ac101d42ae8d54c1b1927f0, type: 3}
+  - {fileID: 6007359540495213242, guid: a0a08a26e78ed4c44b6d8bb5fbf3567f, type: 3}
+  - {fileID: 7470533477632939793, guid: 119a46e7e6c743b449a63620f056096f, type: 3}
+  zSpawn: 0
+  tileLength: 25
+  numberOfTiles: 5
+  playerTransform: {fileID: 1108070111}
+--- !u!4 &613437327
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760407702}
+  m_GameObject: {fileID: 613437325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalPosition: {x: 0.71408, y: 0, z: 5.09776}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -580,7 +582,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 01150c4bc91a61c4fbe1f42490d59014, type: 2}
+  - {fileID: 2100000, guid: 5a7ca585a9b2b3c4587125916713263d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -621,7 +623,7 @@ Transform:
   m_GameObject: {fileID: 1108070106}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: -0.34, y: 1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -706,4 +708,4 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1458356393}
-  - {fileID: 760407704}
+  - {fileID: 613437327}
