@@ -15,12 +15,13 @@ public class PlayerCollision : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Respawn();
+            StopGame();
         }
     }
 
-    void Respawn()
+    void StopGame()
     {
-        transform.position = startPosition;
+        Time.timeScale = 0f;
+        Debug.Log("Die!!!");
     }
 }

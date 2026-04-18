@@ -14,7 +14,9 @@ public class MapSpawn : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < numberOfTiles; i++)
+        SpawnTile(0);
+        
+        for (int i = 0; i < numberOfTiles - 1; i++)
         {
             SpawnTile(i == 0 ? 0 : Random.Range(0, tiles.Length));
         }

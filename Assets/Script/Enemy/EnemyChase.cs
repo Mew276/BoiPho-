@@ -4,6 +4,10 @@ public class ChasePlayer : MonoBehaviour
 {
     public Transform player;
     public float speed = 5f;
+    void Start()
+    {
+        transform.position = (player.position - new Vector3(0, 0, 10));
+    }
     void Update()
     {
         transform.position = Vector3.MoveTowards(
