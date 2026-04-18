@@ -21,6 +21,7 @@ public class PlayerCollision : MonoBehaviour
 
     void StopGame()
     {
+        PlayerManager.gameOver = true;
         Time.timeScale = 0f;
         Debug.Log("Die!!!");
     }
