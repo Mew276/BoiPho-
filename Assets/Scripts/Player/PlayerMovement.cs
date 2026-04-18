@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float forwardSpeed = 5;
     void Update()
     {
-        if (!PlayerManager.gameStart)
+        if (!GameManager.gameStart)
         return;
         
         transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);

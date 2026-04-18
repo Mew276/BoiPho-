@@ -18,7 +18,7 @@ public class CoinScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            PlayerManager.NumbersOfCoin += 1;
+            GameManager.NumbersOfCoin += 1;
             Destroy(gameObject);
         }
     }

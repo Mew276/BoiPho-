@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class PlayerManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public static bool gameStart = false;
     public static bool gameOver = false;

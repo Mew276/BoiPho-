@@ -10,7 +10,7 @@ public class ChasePlayer : MonoBehaviour
     }
     void Update()
     {
-        if (!PlayerManager.gameStart)
+        if (!GameManager.gameStart)
         return;
         
         transform.position = Vector3.MoveTowards(

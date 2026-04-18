@@ -77,7 +77,7 @@ public class TapBoostController : MonoBehaviour
 
     void Move()
     {
-        if (!PlayerManager.gameStart)
+        if (!GameManager.gameStart)
         return;
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
     }
