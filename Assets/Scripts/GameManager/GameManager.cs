@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI GameOverText;
     public GameObject StartingText;
     public TextMeshProUGUI CoinsText;
+    public TextMeshProUGUI ScoreNumbers;
 
     public static int NumbersOfCoin = 0;
+    public float score;
 
     public static bool reStart = false;
 
@@ -27,8 +29,14 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+
         CoinsText.text = "Coins : " + NumbersOfCoin;
 
+        if (gameStart && !gameOver)
+        {
+            score += PlayerMovement.forwardSpeed * Time.deltaTime;
+            ScoreNumbers.text = "Score: " + Mathf.FloorToInt(score / 2) + "m";
+        }
         // Start game
         if (Input.GetKeyDown(KeyCode.Space) && !gameStart)
         {
