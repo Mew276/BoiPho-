@@ -11,8 +11,6 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Va chạm!");
-
         if (collision.gameObject.CompareTag("Enemy"))
         {
             StopGame();
