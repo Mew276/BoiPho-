@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 1407740310118648698}
   - component: {fileID: 4706092647543906134}
   - component: {fileID: 7015745708807372231}
+  - component: {fileID: 2199608058597761799}
   m_Layer: 0
   m_Name: Coin (8)
   m_TagString: Untagged
@@ -239,6 +240,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5794f0a5da74cb4db5baa73144fbcb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinScript
+--- !u!114 &2199608058597761799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439142420636331065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &1991005249960791480
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,6 +267,7 @@ GameObject:
   - component: {fileID: 6634397477531905682}
   - component: {fileID: 7663083071313611199}
   - component: {fileID: 1279347297184163522}
+  - component: {fileID: 1768030595994272834}
   m_Layer: 0
   m_Name: Coin (7)
   m_TagString: Untagged
@@ -366,6 +382,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5794f0a5da74cb4db5baa73144fbcb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinScript
+--- !u!114 &1768030595994272834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991005249960791480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &2576920683723396603
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +522,7 @@ GameObject:
   - component: {fileID: 6021798222389971031}
   - component: {fileID: 1800481050159443060}
   - component: {fileID: 1517767547895833550}
+  - component: {fileID: 4892736229301997895}
   m_Layer: 0
   m_Name: Coin (9)
   m_TagString: Untagged
@@ -606,6 +637,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5794f0a5da74cb4db5baa73144fbcb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinScript
+--- !u!114 &4892736229301997895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3290025386526685796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &4129248137277860162
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +807,7 @@ GameObject:
   - component: {fileID: 3349872369476904598}
   - component: {fileID: 3642227472265163663}
   - component: {fileID: 8407018388260820795}
+  - component: {fileID: 1803252133479010374}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Enemy
@@ -862,6 +908,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1803252133479010374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798276050275347409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &5280723238448400240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1120,7 @@ GameObject:
   - component: {fileID: 5661417798004315106}
   - component: {fileID: 6514374236076808320}
   - component: {fileID: 2751597232526472254}
+  - component: {fileID: 2837956440468470803}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Enemy
@@ -1160,6 +1221,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2837956440468470803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6936989668720766997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &7493953829304722695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1247,7 @@ GameObject:
   - component: {fileID: 2299601050004539103}
   - component: {fileID: 2019541385590909676}
   - component: {fileID: 6951253443313624770}
+  - component: {fileID: 475457383918072509}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Enemy
@@ -1272,6 +1348,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &475457383918072509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493953829304722695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &7731974221616471111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,6 +1375,7 @@ GameObject:
   - component: {fileID: 8674814060237690900}
   - component: {fileID: 8286896281470002141}
   - component: {fileID: 8795320656154472036}
+  - component: {fileID: 6163550833322345278}
   m_Layer: 0
   m_Name: Coin (10)
   m_TagString: Untagged
@@ -1399,6 +1490,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5794f0a5da74cb4db5baa73144fbcb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinScript
+--- !u!114 &6163550833322345278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731974221616471111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
 --- !u!1 &8577137036320313607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1517,7 @@ GameObject:
   - component: {fileID: 166103608315018702}
   - component: {fileID: 7409676116331146995}
   - component: {fileID: 2041064890235729789}
+  - component: {fileID: 5172044843561490999}
   m_Layer: 0
   m_Name: Coin (11)
   m_TagString: Untagged
@@ -1526,3 +1632,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5794f0a5da74cb4db5baa73144fbcb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinScript
+--- !u!114 &5172044843561490999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8577137036320313607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56121cf6087d044c829975ef35987e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinMove
+  player: {fileID: 0}
+  moveSpeed: 20
