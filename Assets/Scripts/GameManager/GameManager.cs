@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -15,21 +16,23 @@ public class GameManager : MonoBehaviour
     public static int NumbersOfCoin = 0;
     public float score;
 
-    public static bool reStart = false;
-
     void Start()
     {
         gameStart = false;
         gameOver = false;
-        reStart = false;
+
         NumbersOfCoin = 0;
+        score = 0;
 
         GameOverText.gameObject.SetActive(false);
+        StartingText.SetActive(true);
+
+        // 🧠 reset player speed
+        PlayerMovement.forwardSpeed = 10f;
     }
 
     void Update()
     {
-
         CoinsText.text = "Coins : " + NumbersOfCoin;
 
         if (gameStart && !gameOver)
@@ -37,27 +40,29 @@ public class GameManager : MonoBehaviour
             score += PlayerMovement.forwardSpeed * Time.deltaTime;
             ScoreNumbers.text = "Score: " + Mathf.FloorToInt(score / 2) + "m";
         }
-        // Start game
+
+        // ▶ start game
         if (Input.GetKeyDown(KeyCode.Space) && !gameStart)
         {
             gameStart = true;
-            Destroy(StartingText);
+            StartingText.SetActive(false);
         }
 
-        // Game over
+        // 💀 game over
         if (gameOver)
         {
             GameOverText.gameObject.SetActive(true);
-            RestartGame();
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                RestartGame();
+            }
         }
     }
 
     void RestartGame()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
