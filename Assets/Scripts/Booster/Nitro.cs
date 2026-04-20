@@ -4,10 +4,14 @@ using UnityEngine;
 public class Nitro : MonoBehaviour
 {
     public float boostMultiplier = 2f;
-    public float boostDuration = 2f;
+    public float boostDuration = 5f;
 
     public static bool isBoosting = false;
 
+    void Start()
+    {
+        StopAllCoroutines();
+    }
     public void ActivateBoost()
     {
         if (!isBoosting)
