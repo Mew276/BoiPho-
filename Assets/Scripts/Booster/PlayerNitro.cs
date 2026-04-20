@@ -8,10 +8,9 @@ public class Nitro : MonoBehaviour
 
     public static bool isBoosting = false;
 
-    void Start()
-    {
-        StopAllCoroutines();
-    }
+    private static float baseSpeed;
+    private static bool hasBaseSpeed = false;
+
     public void ActivateBoost()
     {
         if (!isBoosting)
@@ -24,13 +23,18 @@ public class Nitro : MonoBehaviour
     {
         isBoosting = true;
 
-        float originalSpeed = PlayerMovement.forwardSpeed;
+        // lưu speed gốc 1 lần
+        if (!hasBaseSpeed)
+        {
+            baseSpeed = PlayerMovement.forwardSpeed;
+            hasBaseSpeed = true;
+        }
 
-        PlayerMovement.forwardSpeed = originalSpeed * boostMultiplier;
+        PlayerMovement.forwardSpeed = baseSpeed * boostMultiplier;
 
         yield return new WaitForSeconds(boostDuration);
 
-        PlayerMovement.forwardSpeed = originalSpeed;
+        PlayerMovement.forwardSpeed = baseSpeed;
 
         isBoosting = false;
     }
