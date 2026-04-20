@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 5670472493827544153}
   - component: {fileID: 3912245324079042396}
   - component: {fileID: 3250532409324714983}
+  - component: {fileID: 1766854474639780399}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Enemy
@@ -239,6 +240,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1766854474639780399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865725160020224820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e6bfcef7d52634b879ef0e7de409ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &2101640130853775047
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 6250920893946875658}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.767335, y: 1.0000007, z: -34.013863}
+  m_LocalPosition: {x: -47.474487, y: 0.9999998, z: 37.897488}
   m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1012,6 +1025,7 @@ GameObject:
   - component: {fileID: 659853408755640291}
   - component: {fileID: 3305860148988806236}
   - component: {fileID: 1932926526636315689}
+  - component: {fileID: 222088878155040967}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Enemy
@@ -1112,6 +1126,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &222088878155040967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7552872297674913596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e6bfcef7d52634b879ef0e7de409ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
 --- !u!1 &8587509356856467331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1324,7 @@ GameObject:
   - component: {fileID: 388827806830993936}
   - component: {fileID: 1877973337418451692}
   - component: {fileID: 4942367110071262739}
+  - component: {fileID: 885379447759192647}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Enemy
@@ -1398,3 +1425,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &885379447759192647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110529533891402274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e6bfcef7d52634b879ef0e7de409ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
