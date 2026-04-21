@@ -4,8 +4,6 @@ public class EnemyChase : MonoBehaviour
 {
     public Transform player;
     public static float speed = 21f;
-    public float speedIncreaseOverTime = 0.12f;
-
     void Start()
     {
         if (player != null)
@@ -18,8 +16,6 @@ public class EnemyChase : MonoBehaviour
     {
         if (!GameManager.gameStart || player == null)
             return;
-
-        speed += speedIncreaseOverTime * Time.deltaTime;
 
         transform.position = Vector3.MoveTowards(
             transform.position,

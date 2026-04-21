@@ -7,8 +7,6 @@ public class TapBoostController : MonoBehaviour
     public float tapBoostAmount = 2f;
     public float decaySpeed = 3f;
     public float tapResetWindow = 0.3f;
-    public float speedIncreaseOverTime = 0.50f;
-
     private float currentSpeed;
     private float lastTapTime;
 
@@ -26,7 +24,6 @@ public class TapBoostController : MonoBehaviour
 
     void HandleInput()
     {
-        maxSpeed += speedIncreaseOverTime * Time.deltaTime;
         bool tapped = false;
 
         if (Input.touchCount > 0)
@@ -37,7 +34,7 @@ public class TapBoostController : MonoBehaviour
                 tapped = true;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Da bam");
             tapped = true;
