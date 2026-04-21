@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject StartingText;
     public TextMeshProUGUI CoinsText;
     public TextMeshProUGUI ScoreNumbers;
+    public TextMeshProUGUI playerSpeed;
 
     public static int NumbersOfCoin = 0;
     public float score;
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CoinsText.text = "Coins : " + NumbersOfCoin;
+        playerSpeed.text = "Speed : " + PlayerMovement.forwardSpeed;
 
         if (gameStart && !gameOver)
         {
