@@ -4,16 +4,11 @@ public class NitroPickUp : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            Nitro nitro = other.GetComponent<Nitro>();
+        if (!other.CompareTag("Player")) return;
 
-            if (nitro != null)
-            {
-                nitro.ActivateBoost();
-            }
+        var nitro = other.GetComponent<Nitro>();
+        if (nitro != null) nitro.ActivateBoost();
 
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

@@ -36,7 +36,6 @@ public class TapBoostController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Da bam");
             tapped = true;
         }
 
