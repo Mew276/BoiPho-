@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8959237d4e99644bb75043f89eb33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  enemyBaseSpeed: 21
+  playerBaseSpeed: 10
   GameOverText: {fileID: 816520164}
   StartingText: {fileID: 480421731}
   CoinsText: {fileID: 805637899}
@@ -1538,7 +1540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da5cb83b8245db54681c1fdfae95cbfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  playerSpeed: 10
   maxSpeed: 30
   percentIncreasePerMinute: 0.1
 --- !u!65 &1108070108
@@ -1705,6 +1706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Nitro
   boostMultiplier: 10
   boostDuration: 5
+  baseSpeed: 0
 --- !u!1 &1193460266
 GameObject:
   m_ObjectHideFlags: 0

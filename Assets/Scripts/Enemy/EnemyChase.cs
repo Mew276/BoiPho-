@@ -4,15 +4,12 @@ using UnityEngine;
 public class EnemyChase : MonoBehaviour
 {
     public Transform player;
-
-    public static float speed = 21f;
     public float maxSpeed = 35f;
-
-    [Range(0f, 1f)]
-    public float percentIncrease = 0.1f; // 10% mỗi 60s
-
+    GameManager gm;
+    public float percentIncrease = 0.1f;
     void Start()
     {
+        gm = GameManager.Instance;
         if (player != null)
         {
             transform.position = player.position - new Vector3(0, 0, 10);
@@ -29,7 +26,7 @@ public class EnemyChase : MonoBehaviour
         transform.position = Vector3.MoveTowards(
             transform.position,
             player.position,
-            speed * Time.deltaTime
+            gm.enemyBaseSpeed * Time.deltaTime
         );
     }
 
@@ -39,14 +36,13 @@ public class EnemyChase : MonoBehaviour
         {
             yield return new WaitForSeconds(60f);
 
-            if (GameManager.gameStart && speed < maxSpeed)
+            if (GameManager.gameStart && gm.enemyBaseSpeed < maxSpeed)
             {
-                speed *= (1 + percentIncrease);
+                gm.enemyBaseSpeed *= (1 + percentIncrease);
 
-                // Clamp không vượt max
-                speed = Mathf.Min(speed, maxSpeed);
+                gm.enemyBaseSpeed = Mathf.Min(gm.enemyBaseSpeed, maxSpeed);
 
-                Debug.Log("Enemy speed increased to: " + speed);
+                Debug.Log("Enemy speed increased to: " + gm.enemyBaseSpeed);
             }
         }
     }

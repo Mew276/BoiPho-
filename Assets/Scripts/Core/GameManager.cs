@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
     public static bool gameStart = false;
     public static bool gameOver = false;
+    public float enemyBaseSpeed = 21f;
+    public float playerBaseSpeed = 10f;
 
     public TextMeshProUGUI GameOverText;
     public GameObject StartingText;
@@ -16,6 +19,10 @@ public class GameManager : MonoBehaviour
 
     public static int NumbersOfCoin = 0;
     public float score;
+    void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {

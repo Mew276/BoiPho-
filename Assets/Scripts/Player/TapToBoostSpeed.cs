@@ -4,7 +4,7 @@ public class TapBoostController : MonoBehaviour
 {
     public float normalSpeed = 5f;
     public float maxSpeed = 12f;
-    public float tapBoostAmount = 2f;
+    public float tapBoostAmount = 5f;
     public float decaySpeed = 3f;
     public float tapResetWindow = 0.3f;
     private float currentSpeed;
