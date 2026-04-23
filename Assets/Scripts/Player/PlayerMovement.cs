@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
         if (!GameManager.gameStart)
             return;
 
-        // Tăng tốc mượt theo thời gian
         if (forwardSpeed < maxSpeed)
         {
             float increasePerSecond = percentIncreasePerMinute / 60f;

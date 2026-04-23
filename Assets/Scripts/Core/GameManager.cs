@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
         GameOverText.gameObject.SetActive(false);
         StartingText.SetActive(true);
 
-        // 🧠 reset player speed
         PlayerMovement.forwardSpeed = 10f;
     }
 
@@ -50,14 +49,12 @@ public class GameManager : MonoBehaviour
             ScoreNumbers.text = "Score: " + Mathf.FloorToInt(score / 2) + "m";
         }
 
-        // ▶ start game
         if (Input.GetKeyDown(KeyCode.Space) && !gameStart)
         {
             gameStart = true;
             StartingText.SetActive(false);
         }
 
-        // 💀 game over
         if (gameOver)
         {
             GameOverText.gameObject.SetActive(true);
