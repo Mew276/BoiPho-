@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CoinsText.text = "Coins : " + NumbersOfCoin;
-        playerSpeed.text = "Speed : " + PlayerMovement.forwardSpeed;
+        playerSpeed.text = "Speed : " + Mathf.FloorToInt(PlayerMovement.forwardSpeed);
 
         if (gameStart && !gameOver)
         {

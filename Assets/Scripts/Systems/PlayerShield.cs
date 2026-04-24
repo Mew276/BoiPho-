@@ -6,7 +6,7 @@ public class PlayerShield : MonoBehaviour
     public bool isShieldActive = false;
     public float shieldDuration = 5f;
 
-    public GameObject shieldEffect; // optional (visual shield)
+    public GameObject shieldEffect;
 
     public void ActivateShield()
     {
